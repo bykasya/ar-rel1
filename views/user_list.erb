@@ -1,0 +1,12 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <a href="/">Home</a> <a href="/find">Find User</a> <a href="/what_team">Find Team</a><br><br>
+    <ul>
+        <% @users.each do |e| %>
+        <li><%= e.id.to_s+ " || "+ e.name+" || "+ e.email+' || <a href ="/team_found/'+ e.team.name+'"> '+ e.team.name+ "</a>" %></li>
+        <% end %>
+    </ul>
+        </body>
+</html>

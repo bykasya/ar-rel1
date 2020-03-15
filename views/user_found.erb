@@ -1,0 +1,8 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <a href="/">Home</a> <a href="/find">Find User</a> <a href="/what_team">Find Team</a><br><br>
+ <%= @user.id.to_s + " || " + @user.name + " || " + @user.email + ' ||  <a href ="/team_found/'+ @user.team.name+'"> '+ @user.team.name+ "</a>" %>
+         </body>
+</html>

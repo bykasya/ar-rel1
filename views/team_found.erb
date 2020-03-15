@@ -1,0 +1,14 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <a href="/">Home</a> <a href="/find">Find User</a> <a href="/what_team">Find Team</a><br><br>
+
+ <%= @team.name + " || "+ @team.notes %>
+ <ul>
+    <% @users.each do |e| %>
+         <li><%= e.id.to_s+ ' || <a href= "/found/'+ e.name+'">'+ e.name+" </a> || "+ e.email%></li>
+        <% end %>
+    </ul>
+ </body >
+</html>
